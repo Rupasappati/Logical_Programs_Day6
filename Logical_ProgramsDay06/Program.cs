@@ -15,6 +15,7 @@ namespace Logical_ProgramsDay06
                 Console.WriteLine("Q2.Perfect Number");
                 Console.WriteLine("Q3.Prime Number");
                 Console.WriteLine("Q4.Reverse a Number");
+                Console.WriteLine("Q5.Coupon Number");
                 Console.WriteLine("Please enter the Question Number what you want to excute");
                 int userChoice = Convert.ToInt32(Console.ReadLine());
                 switch (userChoice)
@@ -39,7 +40,12 @@ namespace Logical_ProgramsDay06
                         Reverse_a_Number reverse_a_Number = new Reverse_a_Number();
                         reverse_a_Number.reverseNum();
                         break;
-                        default:
+                    case 5:
+                        Console.WriteLine("You have choosen Q5");
+                        CouponNumbers couponNumbers = new CouponNumbers();
+                        couponNumbers.Coupon();
+                        break;
+                    default:
                         Console.WriteLine("Ivalid Input");
                         break;
 
