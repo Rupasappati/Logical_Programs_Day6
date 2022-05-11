@@ -16,6 +16,7 @@ namespace Logical_ProgramsDay06
                 Console.WriteLine("Q3.Prime Number");
                 Console.WriteLine("Q4.Reverse a Number");
                 Console.WriteLine("Q5.Coupon Number");
+                Console.WriteLine("Q6.Stop Watch");
                 Console.WriteLine("Please enter the Question Number what you want to excute");
                 int userChoice = Convert.ToInt32(Console.ReadLine());
                 switch (userChoice)
@@ -26,6 +27,8 @@ namespace Logical_ProgramsDay06
                         series.FibonacciSeries();
                         break;
                     case 2:
+
+
                         Console.WriteLine("You have choosen Q2");
                         Perfect_Number number = new Perfect_Number();
                         number.perfectNum();                      
@@ -45,8 +48,12 @@ namespace Logical_ProgramsDay06
                         CouponNumbers couponNumbers = new CouponNumbers();
                         couponNumbers.Coupon();
                         break;
+                    case 6:
+                        Console.WriteLine("You have choosen Q5");
+                        StopWatch stopWatch = new StopWatch();
+                       break;
                     default:
-                        Console.WriteLine("Ivalid Input");
+                        Console.WriteLine("Invalid Input");
                         break;
 
                 }
